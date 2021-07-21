@@ -1,0 +1,14 @@
+Auth Server Backend Starter Project Created with Golang 
+
+Starting the APP
+
+1. docker-compose up  (To start the Postgres DB container)
+2. make migrate  (To run the DB migrations, There is a basic users table)
+3. go run cmd/api/*.go  (Starts the application)
+
+The Golang app can also be built with docker as a container.  A sample Dockerfile
+is in the project.  The DB Flag should be changed to the commented out DB Flag
+for Docker. 
+
+Flags and DB schemas should not be checked into source control but are added here
+as an example in this project.

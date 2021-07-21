@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: postgres-elearning
+    image: postgres:13.1-alpine
+    # build: ./internal/repository/
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=auth
+    ports:
+      - "5432:5432"
